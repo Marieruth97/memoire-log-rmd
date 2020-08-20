@@ -1,0 +1,631 @@
+--- 
+title: "Effets des perturbations physiques (feux et exploitations) et du type de sols sur la composition floristique de forêts naturelles semi-décidues en Afrique de l’Ouest."
+author: "DAGO Marie Ruth"
+option: "option"
+type: "Eaux et Forêts"
+promotion: "51ème Promotion ENSA"
+date: "2020"
+encadreur_pedagogique: " Dr Bruno HERAULT"
+encadreur_terrain: "Dr ZO-BI Irie Casimir"
+epigraph: 
+  text: "Une citation."
+  author: "Un illustre inconnu"
+site: bookdown::bookdown_site
+output: 
+  bookdown::gitbook
+ #csl: forest-ecology-and-management.csl
+bibliography: bibliography.bib
+link-citations: yes
+colorlinks: yes
+always_allow_html: yes
+---
+
+`r if (knitr:::is_html_output()) '# Preface {-}'`
+
+`r if (knitr:::is_html_output()) 'Ceci est la version html du modèle de mémoire de master de l\'INP-HB.'`
+
+`r if (knitr:::is_html_output()) 'Bonne lecture à vous.'`
+
+`r if (knitr:::is_html_output()) '<div align="right">  *DAGO Marie Ruth*'`
+
+<!--chapter:end:index.Rmd-->
+
+# Page liminaire {-}
+
+## Résumé {-}
+
+Écrivez ici le résumé de votre mémoire en français.
+
+*Mots clés: Écrivez ici les mots clés en français (cinq mots au plus).*
+
+## Abstract {-}
+
+**Titre en anglais**
+
+Écrivez ici le résumé de votre mémoire en anglais (et changer le titre du paragraphe).
+
+*Keywords: Écrivez ici les mots clés en anglais (cinq mots au plus).*
+
+<!--chapter:end:01-Liminaire.Rmd-->
+
+<!-- Ne pas toucher cette page -->
+
+<!-- Ne surtout pas supprimer la ligne ci-dessous, c'est la table des matières. -->
+
+\tableofcontents
+
+<!--chapter:end:02-TableDesMatieres.Rmd-->
+
+# Dédicace {-}
+
+Écrivez ici vos dédicaces.
+
+<!--chapter:end:03-Dedicace.Rmd-->
+
+# Avant-propos {-}
+
+Écrivez ici votre avant-propos.
+
+<!--chapter:end:04-AvantPropos.Rmd-->
+
+# Remerciements {-}
+
+Rermerciez ici ceux qui le méritent.
+
+<!--chapter:end:05-Remerciements.Rmd-->
+
+# Sigles et abréviations {-}
+
+Décrivez ici vos sigles et abbréviations. Les listes peuvent être utiles :
+
+* __Sigle 1__: signification
+* __Sigle 2__: signification
+
+<!--chapter:end:06-Abbreviations.Rmd-->
+
+<!-- Ne pas toucher cette page -->
+
+<!-- Ne surtout pas supprimer les 3 lignes ci-dessous, ce sont la liste des tables, et la lliste des figures. -->
+
+\listoftables
+
+\listoffigures
+
+<!--chapter:end:07-TableDesIllustrationsTableaux.Rmd-->
+
+<!-- Ne surtout pas supprimer les 3 lignes ci-dessous, ce sont dans l'ordre (i) la table des matières, (ii) la liste des tables, et (iii) la lliste des figures. -->
+
+# Introduction générale {-}
+
+<!-- Vous pouvez faire des commentaires cachés avec CTRL+SHIFT+C -->
+
+<!-- Écrivez ici votre introduction. Utilisez de préférence un gestionaire de référence, comme [Mendeley](https://www.mendeley.com/) ou [Zotero](https://www.zotero.org/). Connectez votre gestionnaire de référence à bookdown via le fichier bibliography défini dans le YAML du ficher `index.Rmd`. Utilisez ensuite l'Addin `citr` pour insérer une citation dans votre texte. Soit avec le menu Addins dans Rstudio soit en rajoutant un racccourcit clavier à Rstudio pour les citations.  -->
+
+
+<!--chapter:end:08-Introduction.Rmd-->
+
+# Revue de littérature
+
+## Présentation du projet RéVaTéné
+
+Toutes les informations sur la présentation du projet sont issues du document du projet d’appel à la candidature PReSeD-CI 2 (Partenariat rénové pour la Recherche au Service du développement de la Côte d’Ivoire) [@Prenom2017].
+
+Le Projet de Réhabilitation du dispositif de Téné appélé RéVaTéné s'inscrit dans le cadre du Programme National de Recherche et s’articule autour de la biodiversité et la conservation des écosystèmes. Ce projet tente de résoudre différentes questions et hypothèses concernant l’évaluation et la gestion des ressources forestières. Il a été initié en Mars 2018 pour une durée de 3 ans et intègre différentes administrations forestières et organismes de recherche ivoiriennes tels que l'Institut National Polytechnique Félix Houphouët-Boigny (INP-HB), la Société de Développement des Forêts (SODEFOR), et l’Université Felix Houphouët-Boigny (UFHB). Le projet comprend  d’autres équipes associées à l’étranger : le Centre de coopération Internationale et de Recherche Agronomique et de Développement (CIRAD France) et l'Université de Lomé (TOGO).
+
+### Historique du dispositif expérimental de la Téné
+Le dispositif de la Téné a été mise en place en 1977-1978 pour expérimenter diverses techniques de gestion sylvicole des forêts semi-décidues [@Bertault1999]. Il a été installé en même temps que les deux autres dispositifs expérimentaux : Irobo et Mopri. Cependant, il reste le moins étudié des trois dispositifs expérimentaux parce qu’il a été parcouru par des feux de forêt, cinq ans après sa mise en place en 1983 entraînant ainsi la mort de plusieurs arbres de plusieurs essences [@Bertault1986]. Le projet RéVaTéné tire avantage de cette perturbation pour répondre à des thématiques actuelles de la foresterie et permettre au dispositif d'intégrer le grand réseau des dispositifs à l'échelle mondiale tels que l' Observatoire des forêts tropicales aménagées (TMFO), Guyafor, Forestplots etc..
+
+ <!-- (Bertault, 1988) -->
+
+### Objectifs du projet
+
+Le projet de Réhabilitation et de Valorisation du dispositif de Téné (RéVaTéné) vise à évaluer les impacts, sur le court, moyen et long terme, des feux de forêts et des choix sylvicoles à la fois sur la biodiversité et l’évolution des stocks ligneux (volume et biomasse) dans le dispositif de Téné. Pour ce faire, le projet comprend 4 volets ou packages, à savoir:
+
+
+-	Volet 1 :  Réhabiliter et compléter les équipements du dispositif de Téné. Ce premier volet permet de rénover entièrement certains équipements de la base vie de Téné pour permettre d’accueillir des étudiants et des chercheurs. 
+
+
+- Volet 2 :  Consolider et développer le potentiel scientifique du dispositif de Téné. Ce second volet permettra de faire la promotion du dispositif de Téné en reconstituant l’historique du site (bibliographie et données d’inventaires de 1978 à 1994). 
+
+
+-	Volet 3 :  Viser l'étude la dynamique de reconstitution des stocks ligneux dans le dispositif de Téné. Ce troisième volet permet d’évaluer la variation du volume de bois d’œuvre entre 1978 et 1994, et d’élaborer une typologie fonctionnelle des essences commerciales à Téné. Les relations "diamètre-hauteur" seront également définies et la biomasse aérienne sera cartographiée. 
+
+
+-	Volet 4 :  Etudier les impacts à court et long terme des feux de forêts sur le dispositif de Téné. Ce quatrième et dernier volet permet de construire la carte des feux de forêts de 2016, et de modéliser l’impact de ces feux de forêts sur la distribution spatiale de la biomasse à Téné.
+
+## Présentation du milieu d'études
+
+### Situation géographique de la forêt de Téné
+
+Avec une superficie estimée à 29700 ha, la Forêt Classée de Téné (FCT) est située dans le centre-ouest de la COTE D'IVOIRE, plus précisément dans le département d’Oumé (voir figure \@ref(fig:fig1)), entre le 6°27 et 6°37 latitude nord et le 5°20 et 5°40 longitude ouest [@Yedmel2014]. Elle est localisée dans la zone forestière de la Côte d'Ivoire, située entre la zone pré-forestière et la zone des forêts sempervirentes. Cette forêt appartient au secteur mésophile du domaine Guinéen [@guillaumet1971milieu].  Elle est caractéristique d'une forêt dense semi-décidue car une partie des grands arbres supérieurs sont défeuillés ensemble pendant une courte période en saison sèche [@Bertault1986].
+
+```{r fig1, fig.cap="Localisation de la forêt classée de Tene", include=TRUE, out.width="0.6\\linewidth", fig.align="center", fig.pos="H"}
+knitr::include_graphics("images/85dcb3e0-f0cd-4d52-8cdf-9ab8c3a7c20d.JPG")
+```
+### Climat
+
+Le climat de la forêt de Téné est de type subéquatorial [@rougerie1960facconnement]. C'est un climat de transition entre le climat du Sud de la Côte d'Ivoire et celui du Nord. Les précipitations annuelles moyennes varient entre 1200 et 1500 mm . La température moyenne générale obtenue entre 1978 à 2008 est de 26,45°C [@Yedmel2014]. Il est divisé en quatre saisons dont deux saisons pluvieuses de Mars à Juin et de Septembre à Novembre et deux saisons sèches de Juin à Aout et de Décembre à Février.
+
+
+### Types de sols
+
+Les sols rencontrés dans la FCT appartiennent aux sous-classes faiblement ou
+moyennement désaturées. Ces sols sont remarquables par leur texture argileuse de couleur rouge et leur faible développement de l’horizon tacheté [@Bertault1992].  Principalement, on rencontre deux types de sols dans cette forêt: les sols drainés et les sols hydromorphes. Ces types de sols se caractérisent par des végétations spécifiques. La végétation de climax correspond à la forêt tropique semi-décidue dominée par les Celtis spp. et Triplochiton scleroxylon [@guillaumet1971vegetation; @KassiNDja2008a]
+En effet, les forêts des sols drainés sont des forêts à _Celtis spp._, _Triplochiton scleroxylon_ (Samba), _Mansonia altissima_ (Bété), _Chrysophyllum perpulchrum_, _Aningueria altissima_,  _Aningueria robusta_, _Nesogrodonia papaverifera_ et _Khaya ivorensis_ tandis que les forêts sur les sols hydromorphes sont des zones de franges plus ou moins larges, très nombreuses le long des cours d'eau [@Bertault1986].
+
+<!-- @article{mielot1980etude,
+  title={Etude dynamique en vue de l’am{\'e}nagement de la for{\^e}t dense de c{\^o}te d’Ivoire},
+  author={Mielot, J and Bertault, JG},
+  journal={Buts et description des travaux r{\'e}alis{\'e}s. SODEFOR, Rapport interne},
+  pages={3--51},
+  year={1980}
+} -->
+
+<!--chapter:end:09-Litterature.Rmd-->
+
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+```{r mmsetup, include=FALSE}
+rm(list = ls()) ; invisible(gc()) ; set.seed(42)
+library(knitr)
+library(tidyverse)
+opts_chunk$set(echo = F, message = F, warning = F, fig.height = 6, fig.width = 6, cache = T)
+```
+# Matériel et Méthodes
+## Milieu d'études
+### Description du dispositif expérimental
+Le dispositif expérimental de la forêt classée de Téné est situé à 15 km de la base vie SODEFOR. Il fait partie des trois dispositifs qui ont été mis en place par la SODEFOR en partenariat avec le Centre technique des forêts tropicales (CTFT), CIRAD actuel. Couvrant une superficie globale de 900 ha (3000 m x 3000 m) dont 400 ha représente la zone d'expérimentation. C'est sur la zone d'expérimentation qu'a porté notre étude. Ainsi, une première zone tampon d'une largeur de 500m a été délimitée autour de la zone d'expérimentation (SODEFOR, 1994). En effet, la zone d’expérimentation qui occupe les 400 ha (2000 m x 2000 m), a fait l’objet d’un quadrillage par des layons distants de 400 m les uns des autres ; délimitant ainsi 25 unités  de 16 ha (400 m x 400 m) chacune (figure \@ref(fig:fig2)). Ensuite, dans chaque unité, il y a une parcelle de 4ha (plot) protégée par une deuxième zone tampon de 100m de largeur, d'où la distance minimum qui sépare deux parcelles est de 200 m. Enfin, à l'intérieur d'une parcelle de 4ha on y trouve quatre sous-parcelles (sub-plot) de 1 ha chacune. 
+
+
+```{r fig2, fig.cap="Schéma du dispositif expérimental de la Téné", include=TRUE,out.width="0.4\\linewidth", fig.height = 6, fig.width = 6, fig.align="center", fig.pos="H"}
+knitr::include_graphics("images/dispositif experimental.png")
+```
+
+### Feux de forêts
+
+Le dispositif est un milieu particulier du fait qu'il a été victime plusieurs fois d’incendie. Cette étude s'est interessée aux feux de 1983 qui a été le feu le plus intense du dispositif  et au dernier enregistré en 2016. Il est bien connu que le feu de 1983 a largement modifié le peuplement existant touchant dans toutes la parcelles la strate de régénération. cet incendie s'est propagé du fait d’une litière sèche et abondante provenant de la défeuillaison à cette période de l’année (Janvier), des chablis, des arbres secs sur pied et en général du sous-bois important constitué des genres _Thaumatococcus_, _Chromoleana_, _Solanum_, _Trema_, etc.). Le principal vecteur de propagation du feu a été l'abondance des bois morts. Le feu a affecté les parcelles sans exception avec une intensité variable à cause de l’ouverture discontinue du couvert lié aux traitements sylvicoles, causant la chute des arbres et des dégâts sur les flux d'arbres. La figure \@ref(fig:fig3) illustre la répartition spatiale du passage du feu de forêt. Selon [@Bertault1992], les parcelles les plus touchées par cet incendie sont celles qui ont été éclaircies et exploitées .
+
+```{r fig3, fig.cap=" Repartition des surfaces brûlées selon les traitements.", include=TRUE, fig.height = 3, fig.width = 6, fig.align="center", fig.pos="H"} 
+ knitr::include_graphics("images/degats.causes.par.le.feu.de.83.PNG") 
+``` 
+
+Le feu parcouru en 2016 est le dernier feu parcouru sur le périmètre, il est l'un des feux des moins forts du dispositif. Les marques de brûlures ont été remarqués sur les arbres en Septembre 2018. De nombreux arbres ont eu leurs fûts touchés entièrement ou en partie par ce feu. Beaucoup d'arbres sont tombés et morts sur pieds mais le couvert végétal n'a pas été fortement touché contrairement à celui de 1983 (\@ref(fig:fig4))
+
+### Traitements effectués
+
+Plusieurs périodes d’exploitation du bois ont eu lieu dans ce dispositif notamment l'exploitation de faible intensité peu de temps avant sa mise en place. En 1977, deux types d'interventions sylvicoles ont été appliquées dans le but de réduire l'importance des essences secondaires et privilégier les essences commerciales [@Bertault1999], à savoir :
+
+- l'exploitation forestière contrôlée des espèces commerciales dans dix parcelles pour le commerce telle une éclaircie systématique dans la période de Décembre 1978 à Avril 1979. En effet, il s'agissait uniquement des essences commerciales de première catégorie, supérieures à 80 cm de diamètre. Elles ont été exploitées à un taux de 12 à 41% de la surface terrière totale, soit un taux moyen d'extraction de 5.8% [@Yedmel2010]. L'exploitation du bois a ramené la surface terrière totale entre 17 et 25 m² /ha. La surface terrière endommagée du fait de l’exploitation était de 2,1 m²/ha en moyenne, soit un total de 7,9 m²/ha détruits ou exploités et le volume moyen prélevé est de 53 m³/ha sur 160 ha [@Bertault1999]. 
+
+- l'éclaircie par dévitalisation des essences secondaires sur pied entraînant ainsi la senescence de l'arbre après deux ans. Elle s'est effectuée dans 5 parcelles de Septembre à Octobre 1978. Initialement, la surface terrière moyenne du peuplement avant l'éclaircie était de 28 m²/ha. En moyenne 8.6 m²/ha ont été enlevés après l'éclaircie ramènent la surface terrière des parcelles à 15-21 m²/ha soit 30 % de la surface terrière initiale [@Bertault1999] (Annexe)) .
+Les dix dernières parcelles ont servi de parcelles témoins. Elles ont été conservées intactes à titre de comparaison.
+
+Cette étude a nécessité l'utilisation des données synthétiques de la surface terrière enlevée avec les traitements effectués sur le dispositif entier. Ces informations ont été nécessaire dans l'analyse des données afin de comprendre réellement l'effet de cette perturbation sur la densité spécifique du dispositif.
+
+
+### Types de sols
+
+
+Les sols rencontrés dans la FCT appartiennent aux sous-classes faiblement ou
+moyennement désaturées. Ces sols sont remarquables par leur texture argileuse de couleur rouge et leur faible développement de l’horizon tacheté [@Bertault1992].  Principalement, on rencontre deux types de sols dans cette forêt: les sols drainés et les sols hydromorphes. Ces types de sols se caractérisent par des végétations spécifiques. La végétation de climax correspond à la forêt tropique semi-décidue dominée par les Celtis spp. et Triplochiton scleroxylon [@guillaumet1971vegetation; @KassiNDja2008a].
+En effet, les forêts des sols drainés sont des forêts à _Celtis spp._, _Triplochiton scleroxylon_ (Samba), _Mansonia altissima_ (Bété), _Chrysophyllum perpulchrum_, _Aningueria altissima_,  _Aningueria robusta_, _Nesogrodonia papaverifera_ et _Khaya ivorensis_ tandis que les forêts sur les sols hydromorphes sont des zones de franges plus ou moins larges, très nombreuses le long des cours d'eau [@Bertault1986].
+
+### Composition floristique
+
+Les espèces du dispositif ont été scindés en deux groupes selon leurs caractéristiques intrinsèques technologiques: les essences principales commercialisées en qualité de bois d'œuvre et les essences secondaires inutilisables en bois d'œuvre à ce jour. Les densités spécifiques aux espèces varient considerablement selon le type de forêt tropicale humides et des conditions locales intrinsèques (bas-fonds, pentes fortes, exposition, stade sylvigénétique, etc.) [@Pascal2003]. 
+Dans cette analyse nous avons utilisé la densité moyenne des arbres à l'hectare. La valeur moyenne de chaque espèce a été déterminée en une moyenne par hectare.   <!-- (ajouter l'histogramme d'abondances si tu veux ) -->
+
+La composition floristique d'une forêt informe sur la stabilité et la dynamique de la forêt et peut servir d’indicateur de l’intensité des perturbations qui ont sévi dans l’écosystème. Dans les années 1980, le dispositif d'étude avait une dominance du Ba ( _Celtis mildbraedii_ ) dans les petits diamètres, mais cependant moins nette que dans le dispositif de Mopri. Le Lotofa ( _Sterculia rhinopetala_), le Lohonfe ( _Celtis adolphi-fridericii_) et le Kotibe ( _Nesogordonia	papaverifera_) sont bien représentés dans les classes 10-30cm. Dans les gros diamètres, le Samba domine très nettement ainsi que le Kotibe et l'Akatio [@mielot1980etude]. 
+Par la suite, pour des tests notamment liés à sa capacité de survie, une essence forestière _Cedrela odorata_ pionnière à croissante rapide a été introduite dans la forêt de Téné, au alentours du dispositif (\@ref(fig:fig4)) . Ainsi, après le feu de 1983 et sous l'action de la dissémination des graines de cette essence par le vent, le dispositif a été sujet de l'invasion du _Cedrela odorata_ principalement dans les parcelles en bordure du dispositif. 
+
+```{r fig4, fig.cap="Carte des caractéristiques pédologiques et de la représentation spatiale du feu de 1983 du dispositif et de l'introduction du Cedrela odorata", include=TRUE, fig.height = 3, fig.width = 6, fig.align="center", fig.pos="H"}
+knitr::include_graphics("images/cedrela plantation.png")
+```
+
+## Matériel
+
+Le matériel utilisé était composé de :
+
+- une base de données de l’inventaire du dispositif effectué au préalable;
+- une boussole pour l’orientation dans la forêt ;
+- des tablettes électroniques pour la saisie des données
+
+Les logiciels utilisés pour cette étude sont:
+
+- Le logiciel Excel 2013 installé sur les tablettes servant à saisir les données prises sur le terrain;
+
+- Le logiciel R version 4.0.1, langage et environnement pour l'information statistique, utilisé pour  traiter les données collectées et rédiger le présent mémoire. Pour se faire, plusieurs librairies ou packages ont été installées (Rstan, Tydiverse, BIOMASS, Rmarkdown, ShinyStan, Rbookdown etc.) ; 
+
+- Le logiciel Mendeley a été utilisé pour la génération de la bibliographie.
+
+### Dispositions avant l’identification
+
+Toutes les 25 parcelles du dispositif ont été inventoriées dont 11 parcelles en 2018 et les 14 restantes en 2019. Cet inventaire avait pour objectif d’inventorier tous les arbres dont le diamètre mesuré à 1m30 du sol est supérieur ou égal à 10 cm. Aussi, ces arbres enregistrés ont constitué une base de données qui a été utilisée pour cette étude.
+
+## Méthodes 
+
+### Périodes de travail
+Les travaux effectués sur le terrain se sont déroulés sur une période de deux mois, du 16 Mars au 05 Mai 2020, à raison de deux phases. La première phase, du 16 Mars au 28 Mars a été axée sur un second inventaire de six parcelles (prise de diamètre des arbres respectant les critères de base) et la deuxième du 15 Avril au 5 Mai orientée à l'identification des espèces propement dite. 
+
+### Acquisition des données
+Notre étude a consisté à déterminer les noms vernaculaire et scientifique de tous les arbres mesurés. L'objectif était d'actualiser les informations botaniques de cette forêt et rendre disponibles ces informations pour de futures études de diversité etc. Les arbres concernés étaient ceux qui avaient reçu leurs identifiants lors du dernier inventaire 2018-2019, présents dans notre base de données, ils étaient au nombre de 23023.
+
+Pour la détermination botanique, trois équipes ont été constituées. Chaque équipe était contenait de trois personnes dont un chef de groupe qui tenait la tablette et saisissait les données et deux botanistes.  
+
+### Détermination des noms des essences
+
+La détermination botanique s'est faite au pied de chaque arbre. D'abord, le numéro de l'arbre était communiqué oralement au chef d'équipe pour s'assurer que cet arbre existe dans la base de données. Ensuite, les botanistes procédaient par observation du tronc, de l'écorce et des feuilles afin de bien les identifier. En cas de doute, les organes de l'arbre étaient emportés pour une meilleure identification ultérieure.
+
+
+### Ensembles des données requises
+
+Afin de répondre aux questions de recherche de notre thème de stage, nous avons eu besoin à plusieurs types de données supplémentaires en plus de l'identification botanique. Il s'agit des variables de :
+- Feu : Il existe des informations deux types d'informations, la proportion des surfaces brûlées par l’incendie de 1983 extrait des cartes prises en 1986 et les proportions des arbres touchés de l'incendie de 2016 récoltés en 2018 qui n'est autre que les arbres brûlés sur pied et morts (couchés et sur pied); 
+
+- Exploitation : l'intensité des exploitations (Surface terrière perdue) sur chaque parcelle du dispositif;
+
+- Type de sols : la carte pédologique du périmètre de la Téné présentant les parcelles en fonction de la présence de bas-fonds ou non.
+
+Ces informations sont principalement issues des travaux effectués par [@Bertault1992] et sont disponibles en annexes.
+
+### Modelisation
+La dynamique forestière s'exprime à différentes échelles de temps et d'espace, il est assez complexe d'observer la dynamique forestière à l'échelle humaine au vu des différentes évolutions spatiales propres aux espèces et des modifications progressives de l'écosystème aux changements climatiques. C'est ainsi que notre étude, la modélisation de la dynamique forestière permettra de mieux explorer les effets des perturbations liées aux incendies et à l'exploitation forestière ou d'en simuler les interactions.
+
+#### Choix du modèle
+Le choix du modèle s'est fait selon plusieurs observations. Les données dont nous disposons sont des données discrètes, nous cherchons la densité des arbres de chaque espèce au sein du dispositif. Dans ces conditions, la loi la mieux adaptée sera une loi qui permet d'estimer une variable de comptage d'individus par espèce et par parcelle. D'où le choix du modèle de Poisson.
+
+#### Modèle de Poisson
+L'objectif était de paramétrer un modèle capable d'estimer la densité des arbres par espèce sur chaque parcelle impliquant l'impact des feux (1983 et 2016), de la perturbation liée à l'exploitation forestière et de l'hydromorphie du sol. Ainsi, notre variable de réponse est la densité des espèces par parcelle tandis que es variables explicatives sont les intensités de feux, d'exploitation forestière et l'hydromorphie. Toutes les variables avaient été mesurées à différentes échelles, cela signifie que ces variables n'auront pas des contributions égales à l'analyse. Ainsi, elles ont été normalisées afin d'avoir des échelles identiques avant d'être pris en compte dans le modèle pour faciliter la comparaison des effets. L'expression mathématique du modèle est la suivante:
+
+$$N_{s,p}\sim P\left(\lambda_{s,p}\right)$$
+où $N(s,p)$ est la nombre d'arbres observée pour une espèce _s_ présente dans une parcelle _p_ :
+
+$\lambda_(s,p)$ est le paramètre de la distribution de Poisson définit sur R+, modélisée une fonction exponentielle des covariables étudiés. Dans le modèle, ont été inclus les covariables étudiés tels que les données de surfaces des feux par parcelle $Fire_{p,y}$, des proportions de la perturbation typique à l'exploitation $Disturb_p$ et des proportions de l'hydromorphie $Soil_p$. Par conséquent, l'expression de $\lambda_(s,p)$ est
+$$\lambda_{s,p}=e^{\left(\beta_{0,s}+\beta_{1,s, y}.Fire_{p,y}+ \beta_{2,s}.Disturb_p + \beta_{3,s}.Soil_p \right)}$$
+
+
+avec les paramètres $\beta_{0,s}$, la valeur de l'intercepte contrôlant la distribution de Poisson lorsque la valeur des covariables est égales à zéro, elle représente l'ensemble des valeurs des espèces lorsque effets des covariables étudiés ne sont pas pris en compte;
+
+$\beta_{1,s,y}$, la réponse des espèces spécifiquement aux feux (1983 et 2016) ;
+
+$\beta_{2,s}$, la réponse des espèces spécifique à la perturbation liée l'exploitation forestière 
+
+$\beta_{3,s}$, la réponse des espèces à l'hydromorphie de la forêt
+
+#### Utilisation des hyper-lois
+
+En outre, nous avons utilisé une hyper-loi avec des hyper-paramètres dans la vraisemblance du modèle dans l'objectif de contrôler la convergence des paramètres dans l'exécution du modèle. Il s'agit de la loi normale de paramètres $\mu$ et $\sigma^2$ qui désignent la moyenne et l'écart-type. Ainsi, les paramètres spécifiques aux espèces se définissent: 
+
+$\beta_{1,s}\sim\mathcal{N}(\mu_{beta_1},\sigma^2_{beta_1})$
+où $\beta_{1,s,y}$ emboitée dans une loi normale ayant pour paramètres la moyenne $\mu_{beta_1}$ et la variance $\sigma^2_{beta_1}$;
+
+$\beta_{2,s}\sim\mathcal{N}(\mu_{beta_2},\sigma^2_{beta_2})$ où $\beta_{2,s}$ emboitée dans une loi normale ayant pour paramètres la moyenne $\mu_{beta_2}$ et la variance $\sigma^2_{beta_2}$;
+
+$\beta_{3,s}\sim\mathcal{N}(\mu_{beta_3},\sigma^2_{beta_3})$ où $\beta_{3,s}$ emboitée dans une loi normale ayant pour paramètres la moyenne $\mu_{beta_1}$ et la variance $\sigma^2_{beta_1}$
+
+$\beta_{4,s}\sim\mathcal{N}(\mu_{beta_4},\sigma^2_{beta_4}$ où $\beta_{4,s}$ emboitée dans une loi normale ayant pour paramètres la moyenne $\mu_{beta_4}$ et la variance $\sigma^2_{beta_4}$.
+
+### Analyses statistiques 
+
+Les affinités édaphiques des espèces seront présentés par espèce. Le test utilisé dans ce cas est l'analyse de comparaison de variances (ANOVA) pour tester l'hypothèse selon laquelle les moyennes des observations par famille sont égales. Aussi, l'exécution du modèle renseignera sur les effets distincts des covariables sur la densité d'arbres. Afin de mesurer l'intensité et le sens de la relation entre les variables, le coefficient de corrélation de Pearson sera calculé pour les relations des variables deux à deux. Les hypothèses suivantes seront testées à partir du calcul du coefficient de corrélation des relations des variables: les espèces vulnérables et favorisées au feu de 1983 le sont aussi en 2016.
+
+
+<!--chapter:end:10-MatEtMet.Rmd-->
+
+---
+output:
+  word_document: default
+  html_document: default
+---
+```{r ressetup, include=FALSE}
+rm(list = ls()) ; invisible(gc()) ; set.seed(42)
+library(knitr)
+library(tidyverse)
+library(readr)
+library(dplyr)
+library(stringr)
+library(ggplot2)
+library(tidyr)
+library(rstan)
+library(shinystan)
+library(bayesplot)
+library(cowplot)
+library(GGally)
+load("model/modenvironnement.RData")
+opts_chunk$set(echo = F, message = F, warning = F, fig.height = 6, fig.width = 6, cache = T)
+```
+
+# Résultats
+Dans cette partie du mémoire seront présentés les résultats de notre étude suivant trois grands lignes: (i) classement des espèces selon leurs vulnérabilités aux feux et à l'exploitation, (ii) classement des espèces selon leurs affinités topographiques  et (iii) les relations des réponses aux perturbations et à l'hydromorphie.
+
+## Composition floristique
+L'inventaire botanique a permis de connaître la composition floristique du dispositif. Les informations relatives aux différentes parcelles notamment la densité d'arbres identifiés, le nombre de familles, de genres et d'espèces par parcelle ont été enregistrés (Table \@ref(tab:tab1)). Au total, 21472 individus observés ont été clairement identifiés sur les 23023 arbres des 100 ha. Soit un taux de détermination de 93 %. Plusieurs raisons expliquent pourquoi 1551 individus n'ont pas été identifiés. Ils étaient soit envahis par des lianes soit introuvables et morts. 
+
+```{r tab1}
+DONNEES<-data_final%>%  filter(!is.na(family))
+dis_plot<- DONNEES %>% group_by(plot) %>% summarise(number= length(field_name))
+dis<-DONNEES %>% group_by(plot) %>% summarise(count = n_distinct(family)) 
+di<-DONNEES %>% group_by(plot) %>% summarise(coun = n_distinct(genus.y)) 
+d<-DONNEES %>% group_by(plot) %>% summarise(cou = n_distinct(species.y)) 
+
+dis_p<-bind_cols(dis_plot, dis$count,di$coun,d$cou)
+dis_p<-bind_cols(dis_p, data_bertault$Treatment, data_bertault$Fire_Surf_1986)
+dis_p<-dis_p %>% as.data.frame()%>%  rename(Parcelle = plot, Effectifs = number, n_Familles=...3,n_Genres= ...4,n_Espèces=...5, Traitement=...6, surface=...7) 
+dis_p %>% 
+  kable(caption = "Caractéristiques de la densité des arbres enregistrées dans l'étude par parcelle", format= "pandoc", booktab = T, col.names = c("Parcelle", "Effectifs", "n_Familles", "n_Genres", "n_Espèces", "Traitement", "surface"))
+remove(d,di,dis,DONNEES, dis_plot)
+```
+
+Selon le tableau 1, les parcelles peuplées sont les parcelles 23,5,7,14,18  et les plus pauvres sont 17, 16, 12,13,9. Les individus identifiés sont repartis en 49 familles, 146 genres et 208 espèces et ont été classés par ordre d'abondance (annexe). Les trois espèces les plus abondantes sont le _Cedrela odorata_ avec un taux de 21 % de la population, _Triplochiton	scleroxylon_(Samba) et _Mansonia altissima_ (Bété) représentent chacun 5 %. Les familles les plus riches sont les _Fabaceae_ représentées par 31 espèces et 1082 individus, _Meliaceae_(16 espèces et 5861), _Malvaceae_ (21 espèces et 6319 individus), _Moraceae_ (13 espèces et 762 individus) et _Rubiaceae_ (11 espèces et 273 individus) 
+Ainsi la figure \@ref(fig:fig6) ci dessous présente l'histogramme de la répartition de espèces suivant un ordre d'abondance décroissant. 
+
+```{r fig6, fig.cap="Histogramme de quelques espèces abondantes", fig.height = 4, fig.width = 7, fig.align="center", fig.pos="H"}
+mod_tc<-mod_tc[order(mod_tc$effectif,decreasing=T),]
+test<-slice(mod_tc, 1:30)
+
+ggplot(test, aes(x= reorder(vernacular, -effectif), y= effectif)) + geom_col()+
+theme(axis.text.x = element_text(angle=45, vjust = 1, hjust=1))+
+  labs(
+       x="Noms vernaculaires des espèces",
+       y="Effectifs des individus")
+```
+## Evaluation des vulnérabilités aux perturbations
+
+La figure \@ref(fig:fig7) caractérise l'influence du feu de 1983 (a), du feu de 2016 (b) et de l'exploitation (c) sur la densité spécifique des espèces. Les réponses des espèces aux feux et à l'exploitation varient d'une espèce à une autre. Une espèce est dite vulnérable au feu  quand la valeur de son paramètre $\beta_{1,s}$ est significativement positif et favorisée quand cette valeur est significativement négative. Il en est de même pour la réponse à l'exploitation et au feu de 2016 avec les valeurs des paramètres spécifiques $\beta_{2,s}$ et $\beta_{4,s}$. Ainsi, nous pouvons classer ces espèces par degré de vulnérabilité notamment les espèces vulnérables (bleu), insensibles (vert) et favorisées (rouge) à ces perturbations. Parmi les 30 premières epèces abondantes, les plus sensibles aux feux de 1983/2016 sont  _Trichilia prieuriana, Trema orientalis, Carica papaya_ et les plus favorisées sont _Newbouldia laevis, Cola gigantea, Cedrela odorata_ et _Ceiba pentandra_. Les plus sensibles à l'exploitation sont  _Morelia senegalensis, Stereospermum	acuminatissimum, Sterculia tragacantha, Trichilia prieuriana, Christiana africana_ et les plus fvorisées sont _Trema orientalis, Carica papaya, Cola gigantea, Terminalia superba, Ceiba pentandra, Cedrela odorata_ Selon leurs vulnérabilités aux perturbations, les espèces ont été listées dans l'annexe X.
+
+```{r fig7, fig.cap="Réponses des espèces aux pertubations représentées à l'échelle logarithmique", fig.height = 4, fig.width = 6, fig.align="center", fig.pos="H"}
+plot_grid(ggplot(mod_tc) + aes(x = eff_ha, y = Mod_4_beta_1) +geom_point(aes(colour = statut_f1)) +
+ geom_smooth(span = 0.75) +scale_x_continuous(trans='log2')+ xlab("Densité des arbres par ha") + ylab("Feu de 1983")+ theme_minimal(),
+ ggplot(mod_tc) + aes(x = eff_ha, y = Mod_4_beta_4) + geom_point(aes(colour = statut_f2)) +
+ geom_smooth(span = 0.75)+ scale_x_continuous(trans='log2') +  xlab("Densité des arbres par ha") + ylab("Feu de 2016") + theme_minimal(),
+ ggplot(mod_tc) + aes(x = eff_ha, y = Mod_4_beta_2) + geom_point(aes(colour = statut_exp)) +
+ geom_smooth( span = 0.75) + scale_x_continuous(trans='log2') +  xlab("Densité des arbres par ha") + ylab("Exploitation forestière") + theme_minimal(), labels = c("a","b","c"), label_size = 10,  align = "v")
+```
+
+Sur la figure ci dessus, les espèces réagissent différemment aux perturbations. Il y a moins d'espèces qui bénéficient au feu de 1983 et un peu plus au feu de 2016. Moyennement les réponses des espèces à l'exploitation et au feu de 2016 semblent nulles contrairement aux réponses du feu de 1983. La courbe de tendance illustrée en bleu de (a) indique la négativité moyenne des réponses à ce feu à un intervalle de confiance de 95 %.
+
+## Présentation des affinités édaphiques 
+
+Les espèces ont été étudiés selon leur préférences ou affinités topographiques. Pour faciliter l'interprétation de ces résultats, nous avons présenté ces affinités par famille (figure \@ref(fig:fig8))
+
+```{r fig8, fig.cap="Présentation des affinités édaphiques des familles", fig.height = 4, fig.width = 5, fig.align="center", fig.pos="H",}
+ggplot(box_family, aes(x = family, y = Mod_4_beta_3), fill = "wheat", color = "mediumpurple3")+
+  geom_boxplot() +
+labs(title="Boxplots des affinités édaphiques des espèces",
+       x="Noms des familles",
+       y= expression(italic(mu)[beta3])) +  
+ theme_gray() + theme(axis.text.x = element_text(size=10, angle=45, vjust=1, hjust = 1.1))
+```
+
+La figure \@ref(fig:fig8) décrit l'affinité à l'hydromorphie du sol de 16 familles tirés au hasard représentez par cinq espèces. Les familles _Fabaceae_, _Rubiaceae_ et _Anacardiaceae_ ont des distributions négatives. Le test ANOVA montre qu'il n' y a pas de différence significative entre les moyennes des familles avec p-value 0.06650927 supérieure à 0.05. Les moyennes des familles ne sont pas différentes les unes des autres. 
+<!--a<-data_final %>% group_by(plot) %>% filter(family=="Fabaceae", plot=="15")-->
+
+## Relations entre les vulnérabilités des espèces aux variables étudiés
+
+```{r fig9, fig.cap= "Relations des réponses des perturbations deux à deux", fig.height = 4, fig.width = 6, fig.align="center", fig.pos="H"}
+both<- mod_tc %>%  select (Mod_4_beta_1, Mod_4_beta_2, Mod_4_beta_3, Mod_4_beta_4) %>% rename(beta1 = Mod_4_beta_1, beta2 = Mod_4_beta_2, beta3 = Mod_4_beta_3)
+ggpairs(both)
+```
+
+La figure \@ref(fig:fig9) montre les relations entre la réponse aux feux de 1983 et de 2016, l'exploitation et l'hydromorphie, les coefficients de corrélations de Pearson. Il en ressort qu'il existe des corrélations négatives et significatives au seuil de significativité de 5 % avec des coefficients r = -0.154 et r = -0.213 uniquement entre la relation des réponses au feu de 1983 et l'hydromorphie et celle des réponses aux feux de  1983 et 2016. Les autres relations ont montré des corrélations positives pour la plupart mais non significatives. 
+
+Cette analyse démontre que les espèces qui ont une forte affinité pour les zones humides souffrent moins au feu de 1983. Dans le dispositif de Téné, il y a assez d'espèces qui ont été insensibles au feu de 1983 et ne préfèrent ni les sols hydromorphes ni les sols drainés, elles se retrouvent un peu partout dans toutes les parcelles. Les espèces favorisées par le feu de 1983 sont rares dans les zones humides (exemple d'espèces).
+
+De plus, l'hypothèse émise avant l'analyse est vérifiée en ce sens que les espèces les plus vulnérables au feu de 1983 ont été également défavorisées lors du passage du feu en 2016 à l'exception de quelques unes. La majorité des espèces du dispositif insensibles et favorisées au feu en 1983 le sont aussi en 2016. 
+
+## Détermination des forces des effets des variables
+
+Les perturbations feux et exploitation ont eu chacune des impacts différents sur la densité des arbres. La distribution des réponses des espèces aux perturbations est illustrée dans la figure \@ref(fig:fig10).
+
+```{r fig10, fig.cap=" Boxplot des effets des perturbations sur la densité", include=TRUE, fig.height = 2, fig.width = 3, fig.align="center", fig.pos="H",}
+#hyperlaws<-hyperlaws %>% as.data.frame()
+#ggplot(hyperlaws, aes(x = Type, y = summary.mean, fill= Type))+
+ # geom_boxplot() +
+#labs(title = "Comparaison des effets des perturbations",
+              #x= "Perturbations",
+             # y= expression(italic((mu)[beta2]~ (mu)[beta1]~ (mu)[beta4])))+
+         #theme_bw()
+knitr::include_graphics("images/Hyperlaws.png") 
+```
+
+La distribution des trois quartiles de la boite à moustache de la réponse au feu de 1983 se situe dans la partie négative du graphique. Par contre, les valeurs observées des médianes des réponses à l'exploitation et au feu de 2016 sont presque nulles. Du coup, les essences ont réagi à près de 75 % négativement lors du passage du feu de 1983 et à 50 % à l'exploitation et au feu de 2016. Les perturbations liée à l'exploitation et au feu de 2016 ont des effets presque nuls sur la densité d'arbres observée. Voyant ces résultats, il en ressort que le passage du feu en 1983 a été la perturbation qui a causé le plus de dégâts sur la densité des populations de Téné.
+
+<!--chapter:end:11-Resultats.Rmd-->
+
+# Discussions
+ Le nombre d'individus recensé à l'hectare est de 215. Ce chiffre est assez faible en comparaison avec les nombres moyens recensés à l'hectare dans diverses études réalisées en Côte d'Ivoire comme celle de [@Nusbaumer2005] dans la forêt classée de Scio (415/ha). La diversité du périmètre expérimental concernant les familles 25 % de celle sur tout le territoire national [@ake2002flore]. 
+
+représente  -->
+<!-- Les espèces légères et -->
+<!-- exigeantes peuvent être abondantes dans les forêts primaires et secondaires -->
+<!-- (tableau 1), mais leur abondance est la plus élevée dans les forêts secondaires. -->
+<!-- Les espèces pionnières de longue durée pourraient atteindre la canopée et -->
+<!-- rester dans la forêt en utilisant une bonne stratégie de régénération comme la -->
+<!-- stratégie de l’écart forestier utilisée par les espèces de dispersion du vent -->
+<!-- (Dupuy, 1998). En tant qu’espèces de longue durée de dispersion du vent, nous -->
+<!-- avons Ceiba pentandra, Triplochiton scleroxylon qui sont de plus grands -->
+<!-- arbres de plusieurs forêts dans la zone guinéenne supérieure et inférieure. -->
+<!-- Cependant, la structure des forêts à feuilles persistantes est tellement plus -->
+<!-- complexe, avec une grande ombre dans le sous-étage que celle de la forêt semicaduques, de sorte que la lumière pionnière exigeant sont plus susceptibles -->
+<!-- d’être trouvés dans une densité plus élevée dans le dernier type de forêt. C’était -->
+<!-- le cas dans la forêt semi-caduques de Mandumbi où la lumière pionnière11 -->
+<!-- exigeait plus abondante que dans la forêt à feuilles persistantes d’Epulu -->
+<!-- (Makana et Thomas, 2006). L’abondance des espèces ombragées est faible -->
+<!-- dans les forêts secondaires. Le rétablissement des espèces successives tardives -->
+<!-- tolérantes à l’ombre et des espèces du sous-étage augmentent en général avec -->
+<!-- l’âge depuis l’abandon. -->
+<!-- ETRAIT DE  (Bénin, Afrique de l’Ouest) structure -->
+
+<!-- Écrivez ici vos discussions. -->
+<!-- Les Fabaceae, Rubiaceae Anacardiaceae sont les familles qui ne sont favorisées dans les milieux hydromorphes car elle ne sont pas spécifique. Celles ci sont effectivement très peu abondantes dans les parcelles hydromorphes. --> 
+
+## Axe 1
+
+La présente étude a permis de mettre en évidence l'existence des interactions entre l'impact des feux (1983/2016), de l'exploitation forestière et du type de sol sur la structure et la composition floristique d'un peuplement d'une forêt naturelle sémi-décidue de Côte d'Ivoire. Nos résultats montrent que la densité des arbres varient sous l'effet des perturbations (feux et exploitation). La structure et la composition floristique du feu ont fortement été modifiées après le passage du feu [@FerrySlik2002]; [@Yedmel2010]) et l'exploitation forestière, entraînant une diminution importante des arbres et des espèces d'arbres des parcelles. Ces répercussions ont été observées même après trois décennies.
+
+Les parcelles les plus peuplées observées sont généralement les témoins parce qu'elles ont significativement touchées par le feu mais de façon modérée contrairement aux parcelles exploitées et éclaircies [@Yedmel2010]. La fragilité des parcelles témoins pourrait être due à l'exploitation de faible intensité réalisée avant la mise en place du dispositif.  Selon  [@FerrySlik2002], la reconstitution des densités initiales après feu et traitements sylvicoles se perçoit après 15ans pour les forêts indonésiennes, grâce à l’augmentation de la densité d’espèces pionnières se trouvant dans le sous-bois [@gondard2004consequences] . Ainsi, en ce qui concerne la composition floristique de Téné, il est assez tôt pour constater une éventuelle régénération des arbres vu que le dernier feu date de 2016. Les incendies peuvent promouvoir la croissance abondante des espèces pionnières [@Fine2002] telle que _Cedrela odorata_ dans les zones fortement brûlées en favorisant la dissémination des graines comme l'affirment  deux auteurs [@slik2003floristic]. ces derniers montrent dans leur étude l'augmentation des valeurs de l'ouverture de la canopée de 6 à 9 % dans les forêts brûlées. Ces résultats ont été aussi observé sur des espèces pionnières où la repousse des arbres pionniers s'est produite dans les forêts ouest africaines brûlés et encore plus dans des parcelles exploitées [@Swaine1992]. Cette espèce représente près de 21 % de la composition floristique de Téné. En effet, cette espèce est considérée comme étant une espèce envahissante dans les forêts de Ghana [@anning2018broussonetia]. Cela s'explique par la récolonisation rapide de l'espace par des espèces pionnière quand les arbres tombent [@Swaine1992] 
+<!-- (etude de victor pour voir la promotion de cette espèce). -->
+
+
+Il existe deux catégories majeures d'espèces, les espèces favorisées par les perturbations et les espèces vulnérables. La perturbation liée au feu a façonné la densité démographique  (Chazdon, 2003) du dispositif formant des groupes d'espèces abondantes et rares en fonction de leurs distributions dans les parcelles . Avant cette étude, l'on s'attendait à ce que les espèces abondantes soient les moins vulnérables au feu de 1983. Significativement, en raison de leur forte densité elles devraient plutôt réagir indifféremment au feu vu que leur effectif pourraient leur permettre de mieux résister au feu et de générer de nouveaux individus. Mais, les résultats observés montrent que ces espèces sont les plus vulnérables au feu de 1983 tandis que les espères rares sont indifférentes. Cela pourrait être dû à la forte intensité du feu de 1983 lors de son passage. En effet, ce feu a duré plus longtemps (3 à 4 jours) dans le dispositif décimant énormément les surfaces floristiques. Un feu intense et persistant qui survient dans une forêt naturelle semi-décidue aura malheureusement plus de chances et de temps de détruire les peuplements de celle ci. Il est aussi important de préciser que l'exploitation sélective effectuée en 1978 a contribué fortement à la sensibilité de cette forêt en ce sens que cette intervention a suscité une ouverture de la canopée [@Bertault1992] et la présence des combustibles inflammables engendrée par l'abandon des sous bois [@Bertault1999; @cochrane2003fire; @siegert2001increased].
+
+
+ Les incendies se sont succédés dans cette forêt dont le dernier enregistré est celui de 2016 pris en compte dans cette étude. Les raisons de ces répétitions sont multiples, comme la fragilité de la forêt depuis l'intervention sylvicole et le passage du premier feu.  Parmi les perturbations étudiés, le feu de 1983 a été reconnu comme la perturbation ayant l'effet le plus important sur la composition de Téné. Comparément au feu de 1983, celui de 2016 a enregistré un nombre de bois morts nettement inférieur en plus des arbres brûlés <!--Il s'agit de la résultante du feu de 2016.-->. Bien qu'il ait brûlé des arbres, son passage sur la forêt de Téné a été léger, n'a duré qu'un jour. Ce temps relativement cours a été la cause de sa faible intensité ayant ainsi moins de répercussions sur la composition floristique.  
+
+
+Parallèlement, après une étude réalisée dans la forêt amazonienne, Cochrane et Schultze (1999) estiment que la reconstitution des parcelles exploitées prend moins de temps que celle des parcelles brûlées. La récupération des forêts après des incendies répétées sera plus lente parce que la mortalté des arbres matures potentiels est plus importante et la banque de semences de sol est épuisé [@uhl1981early; @uhl1990deforestation]. Cela est conforme aux résultats de notre étude dans le sens où 40 ans après l'intervention sylvicole, les parcelles exploitées ont eu assez de temps pour régénérer et reconstituer la composition floristique. Cependant, l'impact des traitements sylvicoles réalisés dans les dispositifs similaires à celui de Téné s'avère bénéfique sur la densité à l'hectare [@detienne1998analyse] du fait de l'ouverture de la canopée que bénéficient les espèces à croissance rapide [@Yedmel2010]. L'effet presque nul de l'intervention sylvicole sur la densité du dispositif de Téné peut s'expliquer par le fait que celui ci a été encore victime d'un feu en 2016. Les dégâts causés par ce second feu ont sûrement masqué son effet significativement positif sur la densité des arbres. 
+
+
+<!-- Les graines sont dispersées par les animaux8 -->
+<!-- qui visitent le site au début de la succession. Les chauves-souris et les oiseaux -->
+<!-- frugivores sont les disperseurs prédominants de plantes ligneuses et permettent -->
+<!-- donc leur établissement précoce (UhL et al., 1981; Vieira et coll., 1994; da -->
+<!-- Silva et coll., 1996). Les singes sont également importants dans la dispersion -->
+<!-- après les oiseaux (Chapman et Chapman, 1999). L’établissement de semis peut -->
+<!-- être plus probable sous les arbres, et surtout sous un arbre plus grand que dans -->
+<!-- la zone voisine sans arbres (Duncan et Chapman, 1999; Chapman et Chapman, -->
+<!-- 1999). En effet, ces arbres attirent plus d’animaux et servent de perche (pour -->
+<!-- les oiseaux) ou de refuge contrairement aux zones ouvertes. Après l’abandon -->
+<!-- de la forêt dégradée, les arbres restants dans les champs agissent comme foyers -->
+<!-- pour la dispersion des graines. Ensuite, les semis recrutés sous l’isolement -->
+<!-- poussent à des arbustes et des arbres plus grands qui deviennent des parcelles -->
+<!-- d’arbres et continuent de faciliter la régénération et le rétablissement des forêts -->
+<!-- (Guevara et al., 1986; Kolb, 1993). La présence d’arbres restants, la proximité -->
+<!-- des forêts primaires ou l’intégration de petites zones dégradées -->
+<!-- (1-2 ha comme dans Kassi N’Dja et Decocq, 2008) permettent la dispersion -->
+<!-- rapide des graines des espèces de la forêt d’origine dans les champs -->
+
+
+
+
+## Axe 2 : Affinités édaphiques
+
+Les familles botaniques des espèces les plus abondantes  sont caractérisées par de grands arbres dispersés d'espèces forestières primaires et des pionniers abondants avec de grandes lacunes dans la canopée [@Swaine1992]. Avec le temps, la distribution spatiale des grands arbres semble significativement régulière du fait que ces arbres créent leurs propres voisinages [@Pascal2003;@pelissier1997heterogeneite] à partir d'une multiplication végétative. Aussi, la dynamique forestière implique différents processus non équiprobables. Les variations de densités, composition floristique et surface terrière liées aux espèces sont gouvernées par la topographie, mortalité des arbres, type de sols, présence de chablis, l'exposition au vent [@gimaret1998sampling; @Pascal2003]. 
+
+Dans cette étude, on s'attendait à ce que ces familles _Fabaceae, Euphorbiaceae,Meliaceae, Malvaceae et Cannabaceae_ etc. n'aient aucune affinité ni pour les sols secs ni pour les zones marécageuses du fait de leur forte distribution; ces milieux différents seraient alors très favorables à leur germination.  Ce qui pourrait accroître leurs chances d'être des familles des espèces abondantes du dispositif. Cependant, dans ces familles, on y trouve des espèces abondantes telles que _Khaya anthotheca_, _Cedrela odorata_ ( _Meliaceae_), _Antiaris toxicaria_ ( _Moraceae_), 	_Ceiba pentandra_ ( _Malvaceae_) ayant tendance à s'affiner dans les zones humides. Cette observation pourrait s'expliquer par la résultante de différents processus où interviennent le mode de distribution et la préférence écologique des espèces selon leurs besoins en eau, nutriments du sol, lumière etc. ([@boyemba2011ecologie; @sonke1998biodiversity]. Par exemple, la distribution poissonniene de _Cedrela odorata_ reflète le comportement pionnier d'une espèce qui s'installe dans les ouvertures distribuées au hasard [@Pascal2003]. 
+
+<!-- Les -->
+<!-- modèles tentant d’expliquer la répartition -->
+<!-- spatiale des espèces d’arbres de forêt tropicale -->
+<!-- font intervenir des facteurs comme les -->
+<!-- perturbations (Schupp et al., 1989 ; Whitmore, -->
+<!-- 1989 ; Molino et Sabatier, 2001) ou des facteurs -->
+<!-- biotiques densité- ou distance-dépendants -->
+<!-- comme dans le modèle proposé par Jansen -->
+<!-- (1970) et Connell (1971). La RFY est une forêt -->
+<!-- hétérogène diversifiée (Lomba et Ndjele, 1998 -->
+<!-- Lomba, 2012). Les individus appartenant à une -->
+<!-- même espèce ont tendance à se regrouper là où -->
+<!-- les conditions optimales pour leurs croissances sont favorables. La détermination quantitative -->
+<!-- des données se traduit par leur nature -->
+<!-- structurale qui n’est qu’un ensemble des -->
+<!-- paramètres ; notamment la distribution spatiale, -->
+<!-- la densité des espèces et les relations qui -->
+<!-- s’interfèrent entre ces derniers (Mangambu et -->
+<!-- al., 2013c). Quant à notre résultat, on observe -->
+<!-- au sein de deux peuplements la distribution -->
+<!-- spatiale des individus de Guarea thompsonii -->
+<!-- Sprague et Hutch. est en grande partie aléatoire. -->
+<!-- D’où, l’acceptation en grande partie de -->
+<!-- l’hypothèse selon laquelle « les individus de G. -->
+<!-- thompsonii Sprague et Hutch sont distribués de -->
+<!-- manière aléatoire au sein de deux -->
+<!-- peuplements ». Katusi (2009) et Picard et -->
+<!-- Gourlet-Flery (2008) ont pu observer une -->
+<!-- distribution hautement agrégative. Lomba -->
+<!-- (2012) a observé une distribution spatiale de -->
+<!-- transition (agrégative puis aléatoire) et cela -->
+<!-- pourrait être lié à la grande surface d’inventaire. -->
+
+
+<!-- La répartition spatiale d’une espèce -->
+<!-- résulte d’un compromis entre ses besoins et les -->
+<!-- différentes ressources disponibles dans le -->
+<!-- milieu, que ce soit l’eau, les nutriments dans le -->
+<!-- sol, la lumière, etc. (Sonke et Lejoly, 1998 ; -->
+<!-- Boyemba, 2011 ; Lomba, 2012 ; Masumbuko et -->
+<!-- al., 2013 ; Mangambu et al., 2013b ; Kumba et -->
+<!-- al., 2013). Les résultats obtenus dans ce travail, -->
+<!-- s’ils ne permettent pas de tester et de vérifier les -->
+<!-- interactions entre les différents paramètres -->
+<!-- impliqués dans la répartition spatiale des -->
+<!-- espèces, permettent cependant d’améliorer la -->
+<!-- compréhension des influences du milieu sur -->
+<!-- cette répartition. L’étude comparative des -->
+<!-- paramètres structuraux et floristiques entre les -->
+<!-- deux peuplements dans RFY montre une -->
+<!-- répartition aléatoire de Guarea thompsonii -->
+<!-- Sprague et Hutch. à partir de 3 à 38 m et -->
+<!-- devient agrégative à partir de 37 à 42 m et -->
+<!-- redevient aléatoire. C’est-à-dire l’étude -->
+<!-- comparative des paramètres structuraux et... en prendre encore dans ce doc -->
+<!-- extrait de structure, diversion spatiale -->
+
+La forte affinité des _Sapotaceae, Sapindaceae_ pour les sols humides se caractérise par leur abondance dans les endroits marécageux. Ces familles auront tendance à se concentrer plus dans des parcelles humides et seront très peu abondantes sur l'ensemble des parcelles en l'occurrence l'espèce _Pouteria altissima_ et _Elaeis guineensis_. Cela est probablement dû au phénomène de compétition de ces espèces avec une ou plusieurs autres espèces qui se développent mieux sur les sols secs repoussant ainsi _Pouteria altissima_ et _Elaeis guineensis_ vers les marécages [@Pascal2003].
+
+
+<!-- espèces des bas-fonds souffrent moins du feu ? -->
+<!-- espèces abondantes , rares par rapport au sol humide? -->
+<!-- esoeces rares pas daffinité -->
+<!-- citer les espèces vulnerables, sol sec dans les resulats -->
+<!-- les especes peu abondantes aiment les sols humides justement parce qu'on ne peut que les retrouver dans les marecages.(palmier agniere) -->
+
+## Axe 3 : Liens entre les réponses des perturbations et l’hydromorphie
+
+<!-- ```{r} -->
+<!-- ggplot(mod_tc, aes(x=Mod_4_beta_1, y=Mod_4_beta_3))+geom_point()+geom_smooth()+geom_text(aes(label=vernacular), size=4) -->
+<!-- ggplot(mod_tc, aes(x=Mod_4_beta_1, y=Mod_4_beta_3))+geom_point()+geom_smooth() -->
+<!-- ggplot(mod_tc, aes(x=Mod_4_beta_1, y=Mod_4_beta_4))+geom_point()+geom_smooth()+geom_text(aes(label=vernacular), size=4) -->
+<!-- ggplot(mod_tc, aes(x=Mod_4_beta_1, y=Mod_4_beta_4))+geom_point() -->
+<!-- ``` -->
+### Relations feu de 1983 et type de sols
+
+La corrélation significativement négative de la relation entre les variables feu et hydromorphie se traduit par le fait que les espèces qui réussissent mieux dans les bas-fonds sont plus sensibles au feu de 1983 tandis que celles qui préfèrent moins les bas-fonds en sont moins vulnérables. Cela est dû à la forte intensité du feu de 1983 qui a asséché les zones marécageuses à tel point qu'il n'y ait plus suffisamment d'humidité pour favoriser le développement les espèces héliophiles. Cependant l'espèce _Elaeis guineensis_ réagit différemment.
+Les résultats observés sont conformes à ceux déjà observés dans  l'étude de [@Swaine1992] à Bornéo en Asie. Dans cette étude, il a été prouvé que _Elaeis guineensis_ est résistant au feu vu qu'il ne possède pas de cambium ni de tissus ligneux. Bien vrai que cette espèce a une forte affinité dans les bas-fonds du fait de sa physiologie, Après l'assèchement du sol lors du passage du feu, cette espèce devient moins tolérante aux sols drainés et son abondance sera plus marquée dans les marécages.
+
+<!-- Inversement, les espèces qui réussissent moins dans les bas-fonds sont généralement indifférentes après le passage du feu à cause de leur capacité à germer naturellement sur les sols secs  -->
+
+### Relations feu 1983 et feu 2016
+ Les résultats montrent qu'après passage du feu en 1983, la densité spécifique des arbres a été significativement affectée contrairement après le feu en 2016.  Cela est sans doute dû au recrutement des espèces pyrophiles voire envahissantes ( _Cedrela odorata_ ) et la présence de _Carica papaya_, espèce vulnérable, indicatrice de feu et de durée de vie très courte. 
+De plus, les sous-bois causés par l'exploitation qui ont servis de combustible, important vecteur de la propagation du feu en 1983 [@Bertault1999] avaient été tous consumés à cette période. Du coup, les parcelles éclaircies et exploitées après régénération n'avaient pas en leur sein de potentiels vecteurs de propagation d'incendie. Ceci pourrait être la raison pour laquelle le feu de 2016 était beaucoup moins intense que le premier et par conséquent de nombreuses espèces ont pu s'adapter.
+
+
+
+ 
+
+<!--chapter:end:12-Discussions.Rmd-->
+
+# Conclusion générale et recommandations
+
+Écrivez ici vos conclusion générale et recommandations
+
+<!--chapter:end:13-Conclusion.Rmd-->
+
+<!-- N'écrivez rien ici, ce document génère automatiquement la liste de vos références -->
+
+# Références bibliographiques (-)
+
+<div id="refs"></div>
+
+\newpage
+
+<!--chapter:end:14-References.Rmd-->
+
+```{r a1setup, include=FALSE}
+rm(list = ls()) ; invisible(gc()) ; set.seed(42)
+library(knitr)
+library(tidyverse)
+opts_chunk$set(echo = F, message = F, warning = F, fig.height = 6, fig.width = 6, cache = T)
+```
+
+# (APPENDIX) Annexes {-} 
+
+# Annexe 1: XX
+
+Rajoutez ici tout ce que vous n'avez pu rentrer dans vos 40 pages.
+
+<!--chapter:end:15-Annexe1.Rmd-->
+
